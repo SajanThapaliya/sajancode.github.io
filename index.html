@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Attractive Text: Building</title>
+  <style>
+    body {
+      background-color: #f2f2f2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .building-text {
+      font-family: Arial, sans-serif;
+      font-size: 72px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #333;
+      letter-spacing: 6px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+    
+    .building-text::before {
+      content: "B";
+      display: inline-block;
+      transform: skewX(-15deg);
+      margin-right: 8px;
+      color: #ff7f00;
+    }
+    
+    .building-text::after {
+      content: "G";
+      display: inline-block;
+      transform: skewX(-15deg);
+      margin-left: 8px;
+      color: #ff7f00;
+    }
+  </style>
+</head>
+<body>
+  <div class="building-text">uildin</div>
+</body>
+</html>
